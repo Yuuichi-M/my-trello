@@ -6,13 +6,18 @@
     </header>
     <main>
       <p class="info-line">All: 0 tasks</p>
+      <list-add/>
     </main>
   </div>
 </template>
 
 <script>
-// ここにJSを書きます
+import ListAdd from './ListAdd.vue'
+
 export default {
+  components: {
+    ListAdd
+  },
 }
 </script>
 
@@ -26,6 +31,6 @@ export default {
 <!-- プロセス
 
 - カードの総数表示
-- リストのドラッグ＆ドロップ
+- ListAddコンポーネント呼び出し
 
 -->
